@@ -1,0 +1,1334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Website</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+    body{
+      color: white;
+      background-color: black;
+    }
+
+   
+
+    #before-nav-bar {
+      text-align: center;
+      background-color: red;
+      padding: 10px;
+    }
+
+    #nav-bar {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      background-color: oklch(0.13 0.03 261.7);
+    }
+    #nav-bar>i{
+      color: oklch(0.71 0.02 261.83);
+    }
+    .section-1-div-1{
+      text-align:center;
+      margin: 30px;
+
+    }
+    .navigation-links{
+      display: flex;
+      justify-content: space-evenly;
+      display: none;
+    }
+    .navigation-links>p{
+      margin-left: 4px;
+      margin-right: 4px;
+    }
+    .Logo-text .fa-bolt {
+      background-color: white;
+      padding-left: 19px;
+      padding-right: 19px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      border-radius: 15px;
+      margin-top: 3px;
+      margin-bottom: 3px;
+      margin-right: 0px;
+      margin-left: 0px;
+      color: black;
+    }
+
+    .Logo-text {
+      width: 21%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+
+    }
+    .Logo-text span{
+      color: white;
+    }
+
+    #text-with-logo {
+      margin-left: 3px;
+    }
+    #New-collection-bolt-icons{
+      background-color: rgb(243, 179, 60);
+      padding-bottom: 3px;
+      padding-top: 3px;
+      border-radius: 21px;
+      width: 50%;
+      margin: auto;
+
+    }
+   
+
+    .stats {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    #verticle-line {
+      background-color: black !important;
+      height: 50px;
+      width: 1px;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+
+    
+
+    img {
+      width: 100%;
+    }
+
+    .Button {
+      display: flex;
+      flex-wrap: wrap;
+      border: 1px solid black;
+      align-items: center;
+      justify-content: center;
+    }
+
+    #Button-1 {
+      padding-left: 25px;
+      padding-right: 25px;
+      padding-top: 6px;
+      padding-bottom: 6px;
+      margin: 10px;
+      border-radius: 10px;
+      background-color: green;
+      color: white;
+      width: 85%;
+    }
+
+    #Button-2 {
+      padding-left: 25px;
+      padding-right: 25px;
+      padding-top: 6px;
+      padding-bottom: 6px;
+      margin: 10px;
+      border-radius: 10px;
+      background-color: white;
+      color: black;
+      width: 85%;
+    }
+
+    #Explore {
+      margin-left: 40%;
+      margin-right: 50%;
+
+    }
+
+    #clickhere {
+      padding-right: 20px;
+      padding-left: 20px;
+      background-color: white;
+
+
+    }
+
+    #section-2-div-1 {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      color:white;
+      margin-bottom: 5px;
+      margin-top: 5px;
+      padding-bottom: 3px;
+      padding-top: 3px;
+    }
+
+    #section-3-div-1 {
+      display: flex;
+      flex-wrap: wrap;
+      color: white;
+    }
+
+    #section-4-div-1 {
+      display: flex;
+      flex-wrap: wrap;
+      color: white;
+      display: inline-block;
+    }
+
+    #view-all {
+      padding-left: 15px;
+      padding-right: 15px;
+      margin-left: 35%;
+      background-color: white;
+      height: 30px;
+      border-radius: 10px;
+
+
+
+    }
+
+    #card-texts {
+      height: 180px;
+      width: 240px;
+      display: flex;
+      flex-wrap: wrap;
+      background-image: url(photo-1542291026-7eec264c27ff.jpeg);
+      background-size: 100%;
+      background-repeat: no-repeat;
+      margin-left: 5px;
+      margin-right: 5px;
+      margin-bottom: 10px;
+      margin-top: 10px;
+      border-radius: 10px;
+      padding: 21px;
+      color: white;
+    }
+
+    #card-texts span {
+      display: inline;
+      width: 100%;
+      height: 20px;
+      padding: 1px 1px;
+      margin: 5px;
+    }
+    
+
+    #card-texts h2 {
+      margin-top: 0px;
+    }
+
+    #card-button {
+      
+      height: 25px;
+      width: 112px;
+      color: white;
+      background-color: black;
+      margin-right: 10px;
+      margin-bottom: 10px;
+      margin-top: 10px;
+      border-radius: 5px;
+      padding: 4px 4px;
+    }
+    
+
+    #section-3-div-2-span {
+      display: block;
+      padding: 10px;
+    }
+
+    #section-3-div-2 {
+      height: 240px;
+      width: 301px;
+      background-image: url(photo-1542291026-7eec264c27ff.jpeg);
+      padding-top: 30px;
+      margin-left:5px ;
+      margin-right: 5px;
+      margin-bottom: 5px;
+      margin-top:5px;
+      background-size: 100%;
+      border-radius: 25px;
+    }
+
+    .parent {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .colors {
+      display: flex;
+    }
+
+    #colors-1 {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background-color: red;
+      padding: 5px;
+    }
+
+    #colors-2 {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background-color: black;
+      padding-left: 5px;
+    }
+
+    #colors-3 {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background-color: blue;
+      padding-left: 5px;
+    }
+
+    #colors-4 {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background-color: green;
+      padding-left: 5px;
+    }
+
+    .card {
+      background-color: #8d8380;
+      color: black;
+      margin-top: 5px;
+      margin-left: 5px;
+      padding-bottom: 5px;
+      padding-top: 5px;
+    }
+
+    .section-3 {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    #icons {
+      color: white;
+      width: 30%;
+      padding-left: 5px;
+      padding-right: 5px;
+    }
+
+    #contents {
+      color: white;
+      padding: 5px;
+      margin: 5px;
+    }
+
+    #feature-1 {
+      display: flex;
+      align-items: center;
+      justify-content: end;
+      
+    }
+
+    .our-features {
+      display: flex;
+      flex-wrap: wrap;
+      border: 3px solid black;
+      margin-left: 5px;
+      margin-right: 5px;
+    
+    }
+   
+
+    #section-4-div-1-A {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      width: 100px;
+      height: 21px;
+
+    }
+
+    #star {
+      display: flex;
+    }
+
+    #Author-image {
+      height: 48px;
+      width: 48px;
+      border-radius: 50px;
+    }
+
+    .Review-cards-div {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+
+
+    }
+
+    .Review-card {
+      border: 1px solid white;
+      margin-left: 5px;
+      margin-right: 5px;
+      margin-bottom: 7px;
+      margin-top: 7px;
+      border-radius: 10px;
+      padding: 10px;
+      
+    }
+
+    .section-5-div-Review {
+      text-align: center;
+      margin-bottom: 7px;
+      margin-top: 7px;
+
+    }
+    .trust-badges{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      margin-left: 28px;
+      margin-right: 23px;
+      text-align: center;
+
+    }
+    #verticle-line-trust-badge{
+      background-color:white !important;
+      height: 50px;
+      width: 1px;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+    #badge{
+      margin-bottom: 5px;
+      margin-top:5px;
+    }
+    .form{
+      background-color: orange;
+      text-align: center;
+     
+    }
+    .form svg{
+      height: 25px;
+      width: 28px;
+    }
+    #App-store{
+      display: flex;
+      align-items: center;
+    }
+    #Play-store{
+      display: flex;
+      align-items: center;
+    }
+    .App-link{
+      display: flex;
+      margin-left: 25px;
+      margin-right: 0px;
+      align-items: center;
+      
+    }
+    #form-div-1{
+      text-align: center;
+    }
+   #form-div-2{
+      text-align: center;
+    }
+    #social-media-icons{
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      
+    }
+    .h-5{
+       height: 20px;
+       width: 30px;
+    }
+    input{
+      height: 45px;
+      border-radius:10px;
+      
+    }
+    #form-button{
+      height: 45px;
+      border-radius: 10px;
+      background-color: white;
+    }
+    #Shop,#Help,#About{
+      margin-top: 10px;
+    }
+    @media screen and (min-width:768px) {
+     .section-1-div{
+      display: flex;
+     }
+     #clickhere{
+      margin-left: 41%;
+     }
+     #Explore{
+      margin-left: 43%;
+     }
+     #section-2-div-1{
+      justify-content: space-between;
+     }
+     .section-2-div{
+      display: flex;
+      flex-wrap: wrap;
+    }
+    #section-3-div-1{
+      display: flex;
+      justify-content: space-between;
+      height: 57px;
+      width: 100%;
+      
+    }
+    .our-features{
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: center;
+    }
+    #section-4-div-1{
+      display: flex;
+      justify-content: space-between;
+    }
+    .Tab-view{
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .Review-cards-div{
+      display: flex;
+      justify-content: space-evenly;
+      flex-wrap: nowrap;
+    }
+    .App-link{
+      justify-content: center;
+    }
+    #footer{
+      display: flex;
+      justify-content:space-evenly;
+    }
+    .Logo-text{
+      display: flex;
+      flex-wrap: wrap;
+    }
+    #view-all{
+      margin: 0px;
+    }
+    .navigation-links{
+      display: flex;
+      justify-content: space-evenly;
+    }
+    .navigation-links a{
+      margin-left: 12px;
+      margin-right: 12px;
+      
+    }
+    #footer{
+      display: flex;
+    }
+    #footer-div-2{
+      display:flex;
+    }
+    }
+    @media screen and (min-width:320px){
+      
+
+      #clickhere{
+        margin-left: 21%;
+      }
+      #Explore{
+        margin-left: 21%;
+      }
+      #Brand{
+        flex-wrap: wrap;
+        
+      } 
+      .Logo-text{
+        display: flex;
+        
+      }
+      #footer .Logo-text{
+        display:inline;
+      }
+      #footer{
+        display: flex;
+        flex-wrap: wrap;
+      }
+      #Shop{
+        margin-top: 21px;
+        margin-left: 12px;
+      }
+      #Help{
+        margin-top: 21px;
+        margin-left: 12px;
+      }
+      #About{
+        margin-top:21px;
+        margin-left:12px;
+      }
+
+
+    }
+    .section-1-div-1 h3,p,#buttons,#New-collections-bolt-icons{
+      margin-top:12px;
+    }
+    
+  </style>
+</head>
+
+<body>
+  <!--Navgation bar-->
+  <nav id="nav-bar">
+    <i class="fas fa-bars"></i>
+    <div class="Logo-text">
+      <i class="fas fa-bolt"></i>
+      <span id="text-with-logo">Stride</span>
+    </div>
+     <div class="navigation-links">
+      <p>Shop</p>
+     <a href="Catagories.html"><p>Categories</p></a> 
+     <a href="NewArrivals.html"><p>New Arrivals</p></a>
+      <p>Sale</p>
+      <a href="About.html"><p>About</p></a>
+     </div>
+    <i class="fas fa-search"></i>
+    <i class="fas fa-toggle-on"></i>
+    <i class="fas fa-cart-plus"></i>
+  </nav>
+  <!--Section-1-->
+<section class="section-1">
+   <div class="section-1-div">
+    <div class="section-1-div-1">
+      
+      <div id="New-collection-bolt-icons">
+        <i class="fas fa-bolt"></i>
+        <span>New collection 2032</span>
+      </div>
+      <h3>Step Into</h3>
+      <h3>Your Best</h3>
+      <p>Premium footwear for every step of your journey. From athletic performance to everyday comfort.</p>
+      <div class="Button">
+        <button id="Button-1">Shop Now</button>
+        <button id="Button-2">Browse Catagories</button>
+      </div>
+      <div class="stats">
+        <div>
+          <h4>50K+</h4>
+          <p>Happy Customers</p>
+        </div>
+        <div id="verticle-line"> </div>
+        <div>
+          <h4>50K+</h4>
+          <p>Happy Customers</p>
+        </div>
+        <div id="verticle-line"> </div>
+        <div>
+          <h4>50K+</h4>
+          <p>Happy Customers</p>
+        </div>
+      </div>
+    </div>
+    <div>
+      <img src="photo-1542291026-7eec264c27ff.jpeg" alt="Image" />
+    </div>
+   </div>
+    <span id="Explore">Explore</span>
+    <button id="clickhere">click here</button>
+  
+</section>
+  <!--section-2-->
+<section-2>
+  
+       <div id="section-2-div-1">
+         <div>
+          <h2>Shop by Category</h2>
+          <p>Find the perfect pair for every occasion</p>
+         </div>
+        <button id="view-all">View all ></button>
+       </div>
+    <div class="section-2-div">
+    <div id="card-texts">
+      <span>48 products</span>
+      <h2>Running</h2>
+      <p>Performance shoes built for speed and<br> endurance</p>
+      <button id="card-button">shop now</button>
+    </div>
+    <div id="card-texts">
+      <span>48 products</span>
+      <h2>Running</h2>
+      <p>Performance shoes built for speed and<br> endurance</p>
+      <button id="card-button">shop now</button>
+    </div>
+    <div id="card-texts">
+      <span>48 products</span>
+      <h2>Running</h2>
+      <p>Performance shoes built for speed and<br> endurance</p>
+      <button id="card-button">shop now</button>
+    </div>
+    <div id="card-texts">
+      <span>48 products</span>
+      <h2>Running</h2>
+      <p>Performance shoes built for speed and<br> endurance</p>
+      <button id="card-button">shop now</button>
+    </div>
+    <div id="card-texts">
+      <span>48 products</span>
+      <h2>Running</h2>
+      <p>Performance shoes built for speed and<br> endurance</p>
+      <button id="card-button">shop now</button>
+    </div>
+    <div id="card-texts">
+      <span>48 products</span>
+      <h2>Running</h2>
+      <p>Performance shoes built for speed and<br> endurance</p>
+      <button id="card-button">shop now</button>
+    </div>
+    <div id="card-texts">
+      <span>48 products</span>
+      <h2>Running</h2>
+      <p>Performance shoes built for speed and<br> endurance</p>
+      <button id="card-button">shop now</button>
+    </div>
+  </div>
+</section-2>
+  <!--section-3-->
+  <section class="section-3">
+    <div id="section-3-div-1">
+      <div>
+        <h2>Featured collection</h2>
+        <p>Find the perfect pair for every occasion</p>
+      </div>
+      <button id="view-all">View all ></button>
+    </div>
+    <div class="card">
+      <!--card-1-->
+      <div id="section-3-div-2">
+        <span id="section-3-div-2-span">18% off</span>
+        <span id="section-3-div-2-span">best seller</span>
+      </div>
+      <div class="section-3-div-3">
+        <div class="parent">
+          <div>
+            <p>Running</p>
+            <h3>velocity runner pro</h3>
+          </div>
+          <div>
+            <span id="section-3-div-3-span">4.9</span>
+          </div>
+        </div>
+        <span>$179</span>
+        <div class="colors">
+          <span id="colors-1"> </span>
+          <span id="colors-2"> </span>
+          <span id="colors-3"> </span>
+        </div>
+        <p>12 sizes available</p>
+      </div>
+    </div>
+    <!--card-2-->
+    <div class="card">
+      <div id="section-3-div-2">
+        <span id="section-3-div-2-span">18% off</span>
+        <span id="section-3-div-2-span">best seller</span>
+      </div>
+      <div class="section-3-div-3">
+        <div class="parent">
+          <div>
+            <p>Running</p>
+            <h3>velocity runner pro</h3>
+          </div>
+          <div>
+            <span id="section-3-div-3-span">4.9</span>
+          </div>
+        </div>
+        <span>$179</span>
+        <div class="colors">
+          <span id="colors-1"> </span>
+          <span id="colors-2"> </span>
+          <span id="colors-3"> </span>
+        </div>
+        <p>12 sizes available</p>
+      </div>
+    </div>
+    <!--card-3-->
+    <div class="card">
+      <div id="section-3-div-2">
+        <span id="section-3-div-2-span">18% off</span>
+        <span id="section-3-div-2-span">best seller</span>
+      </div>
+      <div class="section-3-div-3">
+        <div class="parent">
+          <div>
+            <p>Running</p>
+            <h3>velocity runner pro</h3>
+          </div>
+          <div>
+            <span id="section-3-div-3-span">4.9</span>
+          </div>
+        </div>
+        <span>$179</span>
+        <div class="colors">
+          <span id="colors-1"> </span>
+          <span id="colors-2"> </span>
+          <span id="colors-3"> </span>
+        </div>
+        <p>12 sizes available</p>
+      </div>
+    </div>
+    <!--card-3-->
+    <div class="card">
+      <div id="section-3-div-2">
+        <span id="section-3-div-2-span">18% off</span>
+        <span id="section-3-div-2-span">best seller</span>
+      </div>
+      <div class="section-3-div-3">
+        <div class="parent">
+          <div>
+            <p>Running</p>
+            <h3>velocity runner pro</h3>
+          </div>
+          <div>
+            <span id="section-3-div-3-span">4.9</span>
+          </div>
+        </div>
+        <span>$179</span>
+        <div class="colors">
+          <span id="colors-1"> </span>
+          <span id="colors-2"> </span>
+          <span id="colors-3"> </span>
+        </div>
+        <p>12 sizes available</p>
+      </div>
+    </div>
+    <!--card-4-->
+    <div class="card">
+      <div id="section-3-div-2">
+        <span id="section-3-div-2-span">18% off</span>
+        <span id="section-3-div-2-span">best seller</span>
+      </div>
+      <div class="section-3-div-3">
+        <div class="parent">
+          <div>
+            <p>Running</p>
+            <h3>velocity runner pro</h3>
+          </div>
+          <div>
+            <span id="section-3-div-3-span">4.9</span>
+          </div>
+        </div>
+        <span>$179</span>
+        <div class="colors">
+          <span id="colors-1"> </span>
+          <span id="colors-2"> </span>
+          <span id="colors-3"> </span>
+        </div>
+        <p>12 sizes available</p>
+      </div>
+    </div>
+    <!--card-5-->
+    <div class="card">
+      <div id="section-3-div-2">
+        <span id="section-3-div-2-span">18% off</span>
+        <span id="section-3-div-2-span">best seller</span>
+      </div>
+      <div class="section-3-div-3">
+        <div class="parent">
+          <div>
+            <p>Running</p>
+            <h3>velocity runner pro</h3>
+          </div>
+          <div>
+            <span id="section-3-div-3-span">4.9</span>
+          </div>
+        </div>
+        <span>$179</span>
+        <div class="colors">
+          <span id="colors-1"> </span>
+          <span id="colors-2"> </span>
+          <span id="colors-3"> </span>
+        </div>
+        <p>12 sizes available</p>
+      </div>
+    </div>
+    <!--card-6-->
+    <div class="card">
+      <div id="section-3-div-2">
+        <span id="section-3-div-2-span">18% off</span>
+        <span id="section-3-div-2-span">best seller</span>
+      </div>
+      <div class="section-3-div-3">
+        <div class="parent">
+          <div>
+            <p>Running</p>
+            <h3>velocity runner pro</h3>
+          </div>
+          <div>
+            <span id="section-3-div-3-span">4.9</span>
+          </div>
+        </div>
+        <span>$179</span>
+        <div class="colors">
+          <span id="colors-1"> </span>
+          <span id="colors-2"> </span>
+          <span id="colors-3"> </span>
+        </div>
+        <p>12 sizes available</p>
+      </div>
+    </div>
+    <!--card-7-->
+    <div class="card">
+      <div id="section-3-div-2">
+        <span id="section-3-div-2-span">18% off</span>
+        <span id="section-3-div-2-span">best seller</span>
+      </div>
+      <div class="section-3-div-3">
+        <div class="parent">
+          <div>
+            <p>Running</p>
+            <h3>velocity runner pro</h3>
+          </div>
+          <div>
+            <span id="section-3-div-3-span">4.9</span>
+          </div>
+        </div>
+        <span>$179</span>
+        <div class="colors">
+          <span id="colors-1"> </span>
+          <span id="colors-2"> </span>
+          <span id="colors-3"> </span>
+        </div>
+        <p>12 sizes available</p>
+      </div>
+    </div>
+    
+    <!--Our -->
+    <div class="our-features">
+      <!--feature-1-->
+      <div id="feature-1">
+        <div id="icons">
+          <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M8 17a2 2 0 100-4 2 2 0 000 4zM19 17a2 2 0 100-4 2 2 0 000 4zM10.5 10H17l2 4m0 0h2v4h-2m0-4H5.5a2 2 0 00-2 2v2h2m0 0H19M3 10h4.5l1-4h8l1 4">
+            </path>
+          </svg>
+        </div>
+        <div id="contents">
+          <h3>Free Shipping</h3>
+          <p>Free standard shipping on all orders over $75. Express options available.</p>
+        </div>
+      </div>
+      <!--feature-2-->
+      <div id="feature-1">
+        <div id="icons">
+          <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15">
+            </path>
+          </svg>
+        </div>
+        <div id="contents">
+          <h3>60-Day Returns</h3>
+          <p>Changed your mind? Return unworn items within 60 days, no questions asked.</p>
+        </div>
+      </div>
+     <!--feature-3-->
+     <div id="feature-1">
+      <div id="icons">
+        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3">
+          </path>
+        </svg>
+      </div>
+      <div id="contents">
+        <h3>Size Guarantee</h3>
+        <p>Not the right fit? Exchange for a different size at no extra cost.</p>
+      </div>
+    </div>
+    <!--feature-4-->
+    <div id="feature-1">
+      <div id="icons">
+        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z">
+          </path>
+        </svg>
+      </div>
+      <div id="contents">
+        <h3>Secure Checkout</h3>
+        <p>Your payment information is encrypted and secure. Shop with confidence.</p>
+      </div>
+    </div>
+  </div>
+
+  </section>
+  <!--section-4-->
+  <section class="section-4">
+      <div id="section-4-div-1-A">
+        <span id="colors-4"> </span>
+        <span>Just Dropped</span>
+      </div>
+    <div id="section-4-div-1">
+      <div>
+        <h2>New Arrival</h2>
+        <p>Fresh styles just landed — be the first to rock them</p>
+      </div>
+      <button id="view-all">View all ></button>
+    </div>
+    <div class="Tab-view">
+      <div class="card">
+      <!--card-1-->
+      <div id="section-3-div-2">
+        <span id="section-3-div-2-span">18% off</span>
+        <span id="section-3-div-2-span">best seller</span>
+      </div>
+      <div class="section-3-div-3">
+        <div class="parent">
+          <div>
+            <p>Running</p>
+            <h3>velocity runner pro</h3>
+          </div>
+          <div>
+            <span id="section-3-div-3-span">4.9</span>
+          </div>
+        </div>
+        <span>$179</span>
+        <div class="colors">
+          <span id="colors-1"> </span>
+          <span id="colors-2"> </span>
+          <span id="colors-3"> </span>
+        </div>
+        <p>12 sizes available</p>
+      </div>
+    </div>
+    <!--card-2-->
+    <div class="card">
+      <div id="section-3-div-2">
+        <span id="section-3-div-2-span">18% off</span>
+        <span id="section-3-div-2-span">best seller</span>
+      </div>
+      <div class="section-3-div-3">
+        <div class="parent">
+          <div>
+            <p>Running</p>
+            <h3>velocity runner pro</h3>
+          </div>
+          <div>
+            <span id="section-3-div-3-span">4.9</span>
+          </div>
+        </div>
+        <span>$179</span>
+        <div class="colors">
+          <span id="colors-1"> </span>
+          <span id="colors-2"> </span>
+          <span id="colors-3"> </span>
+        </div>
+        <p>12 sizes available</p>
+      </div>
+    </div>
+    <!--card-3-->
+    <div class="card">
+      <div id="section-3-div-2">
+        <span id="section-3-div-2-span">18% off</span>
+        <span id="section-3-div-2-span">best seller</span>
+      </div>
+      <div class="section-3-div-3">
+        <div class="parent">
+          <div>
+            <p>Running</p>
+            <h3>velocity runner pro</h3>
+          </div>
+          <div>
+            <span id="section-3-div-3-span">4.9</span>
+          </div>
+        </div>
+        <span>$179</span>
+        <div class="colors">
+          <span id="colors-1"> </span>
+          <span id="colors-2"> </span>
+          <span id="colors-3"> </span>
+        </div>
+        <p>12 sizes available</p>
+      </div>
+    </div>
+    <!--card-3-->
+    <div class="card">
+      <div id="section-3-div-2">
+        <span id="section-3-div-2-span">18% off</span>
+        <span id="section-3-div-2-span">best seller</span>
+      </div>
+      <div class="section-3-div-3">
+        <div class="parent">
+          <div>
+            <p>Running</p>
+            <h3>velocity runner pro</h3>
+          </div>
+          <div>
+            <span id="section-3-div-3-span">4.9</span>
+          </div>
+        </div>
+        <span>$179</span>
+        <div class="colors">
+          <span id="colors-1"> </span>
+          <span id="colors-2"> </span>
+          <span id="colors-3"> </span>
+        </div>
+        <p>12 sizes available</p>
+      </div>
+    </div>
+    <!--card-4-->
+    <div class="card">
+      <div id="section-3-div-2">
+        <span id="section-3-div-2-span">18% off</span>
+        <span id="section-3-div-2-span">best seller</span>
+      </div>
+      <div class="section-3-div-3">
+        <div class="parent">
+          <div>
+            <p>Running</p>
+            <h3>velocity runner pro</h3>
+          </div>
+          <div>
+            <span id="section-3-div-3-span">4.9</span>
+          </div>
+        </div>
+        <span>$179</span>
+        <div class="colors">
+          <span id="colors-1"> </span>
+          <span id="colors-2"> </span>
+          <span id="colors-3"> </span>
+        </div>
+        <p>12 sizes available</p>
+      </div>
+    </div>
+    </div>
+    
+  </section>
+  <!--section-5-->
+  <section class="section-5">
+    <div class="section-5-div-Review">
+      <span>Customer Love</span>
+      <h2>What Our Customer Say</h2>
+      <p>Join thousands of happy customers who have made Stride their go-to footwear brand</p>
+    </div>
+    <div class="Review-cards-div">
+      <!--Review card-1-->
+      <div class="Review-card">
+        <div id="star">
+          <span>*</span>
+          <span>*</span>
+          <span>*</span>
+          <span>*</span>
+          <span>*</span>
+        </div>
+        <blockquote>
+          "Stride has completely transformed my running experience. The Velocity Runner Pro helped me PR at my last
+          marathon by 8 minutes."
+        </blockquote>
+        <div class="Author">
+          <img id="Author-image" src="photo-1507003211169-0a1dd7228f2d.jpeg" />
+          <div>
+            <h3>Marcus Chen</h3>
+            <p>Marathon Runner</p>
+          </div>
+        </div>
+      </div>
+      <!--Review card-2-->
+      <div class="Review-card">
+        <div id="star">
+          <span>*</span>
+          <span>*</span>
+          <span>*</span>
+          <span>*</span>
+          <span>*</span>
+        </div>
+        <blockquote>
+          "Stride has completely transformed my running experience. The Velocity Runner Pro helped me PR at my last
+          marathon by 8 minutes."
+        </blockquote>
+        <div class="Author">
+          <img id="Author-image" src="photo-1507003211169-0a1dd7228f2d.jpeg" />
+          <div>
+            <h3>Marcus Chen</h3>
+            <p>Marathon Runner</p>
+          </div>
+        </div>
+      </div>
+      <!--Review card-3-->
+      <div class="Review-card">
+        <div id="star">
+          <span>*</span>
+          <span>*</span>
+          <span>*</span>
+          <span>*</span>
+          <span>*</span>
+        </div>
+        <blockquote>
+          "Stride has completely transformed my running experience. The Velocity Runner Pro helped me PR at my last
+          marathon by 8 minutes."
+        </blockquote>
+        <div class="Author">
+          <img id="Author-image" src="photo-1507003211169-0a1dd7228f2d.jpeg" />
+          <div>
+            <h3>Marcus Chen</h3>
+            <p>Marathon Runner</p>
+          </div>
+        </div>
+      </div>
+      <!--Review card-4-->
+      <div class="Review-card">
+        <div id="star">
+          <span>*</span>
+          <span>*</span>
+          <span>*</span>
+          <span>*</span>
+          <span>*</span>
+        </div>
+        <blockquote>
+          "Stride has completely transformed my running experience. The Velocity Runner Pro helped me PR at my last
+          marathon by 8 minutes."
+        </blockquote>
+        <div class="Author">
+          <img id="Author-image" src="photo-1507003211169-0a1dd7228f2d.jpeg" />
+          <div>
+            <h3>Marcus Chen</h3>
+            <p>Marathon Runner</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="trust-badges">
+      <div id="badge">
+        <h1>50K+</h1>
+        <p>Happy Customers</p>
+      </div>
+      <div id="verticle-line-trust-badge"> </div>
+      <div id="badge">
+        <h1>50K+</h1>
+        <p>Happy Customers</p>
+      </div>
+      <div id="verticle-line-trust-badge"> </div>
+      <div id="badge">
+        <h1>50K+</h1>
+        <p>Happy Customers</p>
+      </div>
+      <div id="verticle-line-trust-badge"> </div>
+      <div id="badge">
+        <h1>50K+</h1>
+        <p>Happy Customers</p>
+      </div>
+    </div>
+  </section>
+  <!--section-6-->
+  <section class="form">
+    <div>
+      <h2>Ready to Step Up Your Game?</h2>
+      <p>Join the Stride community and get 15% off your first order. Plus, early access to new releases and exclusive member-only deals.</p>
+      <div id="email">
+        <input type="text" placeholder="Enter Your email">
+        <button id="form-button">Get 15% off</button>
+      </div>
+      <p>No spam, ever. Unsubscribe anytime.</p>
+      <div>
+        <p>Download our app</p>
+        <div class="App-link">
+            <div id="App-store">
+              <svg class="h-7 w-7 text-white" viewBox="0 0 24 24" fill="currentColor"> <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"></path> </svg>
+              <div>
+                <p>Download on the</p>
+                <span>App Store</span>
+              </div>
+            </div>
+            <div id="Play-store">
+                <svg class="h-6 w-6 text-white" viewBox="0 0 24 24" fill="currentColor"> <path d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.9 20.18,13.18L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z"></path> </svg>
+              <div>
+                 <p>Get it on</p>
+                 <span>Play Store</span>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </section>
+ <!--section-7-->
+ <section>
+  <div id="form-2">
+    <div id="form-div-1">
+    <h3>Join the stride club</h3>
+    <p>Get 15% off your first order,plus early access to new drops</p>
+  </div>
+  <div id="form-div-2" >
+     <form>
+      <input type="text" placeholder="Enter your email address "/>
+      <button id="form-button">Subscribe</button>
+     </form>
+  </div>
+ </section> 
+ <!--section-8-->
+ <section class="footer">
+  <div id="footer">
+  <div id="Brand">
+    <div class="Logo-text">
+      <i class="fas fa-bolt"></i>
+      <span id="text-with-logo">Stride</span>
+      <p>Premium footwear for every step of your journey.</p>
+      <p>From athletic performance to everyday comfort.</p>
+      <div id="social-media-icons">
+       <!--instagram-icons-->
+      <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24"> <path d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"></path> </svg>
+    
+     <!--facebook icons-->
+     <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24"> <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"></path> </svg>
+     <!--space-x-icons--> 
+        <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24"> <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path> </svg>
+     <!--Youtube-icons-->
+     <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24"> <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"></path> </svg>
+     <!--TikTok-icons-->
+     <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24"> <path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"></path> </svg>
+      
+
+    </div>
+    </div>
+      
+    </div>
+    
+    <div id="footer-div-2">
+
+    <div id="Shop">
+      <h4>Shop</h4>
+         <ul type="none">
+          <li>Running</li>
+          <li>Sneakers</li>
+          <li>Basketball</li>
+          <li>Casual</li>
+          <li>Boots</li>
+          <li>Sandals</li>
+         </ul>
+    </div>
+    <div id="Help">
+      <h4>Help</h4>
+      <ul type="none">
+        <li>FAQ</li>
+        <li>Shipping & Returns</li>
+        <li>Size Guide</li>
+        <li>Contact Us</li>
+        <li>Track Order</li>
+      </ul>
+    </div>
+    <div id="About">
+      <h4>About</h4>
+      <ul type="none">
+        <li>Our Story</li>
+        <li>Sustainability</li>
+        <li>Athletes</li>
+        <li>Careers</li>
+        <li>Store Locator</li>
+      </ul>
+    </div>
+   </div>
+  </div>
+</section>
+</body>
+
+</html>
